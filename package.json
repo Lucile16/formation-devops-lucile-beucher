@@ -1,0 +1,15 @@
+{
+  "name": "formation-devops-lucile-beucher",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000f\u0000o\u0000r\u0000m\u0000a\u0000t\u0000i\u0000o\u0000n\u0000-\u0000d\u0000e\u0000v\u0000o\u0000p\u0000s\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "should": "^13.2.3"
+  }
+}
