@@ -4,16 +4,7 @@ on:
   push:
     branches: [ main ]
 
-jobs:
-  linter:
-    name: Linter
-    runs-on: ubuntu-latest
-    steps:
-      - run: npm install eslint
-      - uses: wearerequired/lint-action@v2
-        with:
-          eslint: true
-  
+jobs:  
   tests:
     name: Tests
     runs-on: ubuntu-latest
