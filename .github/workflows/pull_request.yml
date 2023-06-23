@@ -1,18 +1,20 @@
-name: Pull request
+name: Test formation DevOps
 
 on:
   push:
-    branches: [ test-pull-request ]
+    branches: [ main ]
 
 jobs:
+
   deployment:
-    name: Tests devops
+    name: Tests
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: '18'
+      - uses: actions/checkout@v3
       - run: npm install
       - run: npm install -g mocha
       - run: npm run test
