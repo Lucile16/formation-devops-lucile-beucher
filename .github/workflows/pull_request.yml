@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: tests
+        working-directory: ./tests
     steps:
       - run: npm install --legacy-peer-deps
       - run: npm run lint
