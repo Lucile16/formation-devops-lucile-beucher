@@ -2,7 +2,7 @@ name: Pull request
 
 on:
   push:
-    branches: [ github-action ]
+    branches: [ test-pull-request ]
 
 jobs:
   deployment:
