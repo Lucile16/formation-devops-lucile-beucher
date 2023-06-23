@@ -11,6 +11,9 @@ jobs:
     defaults:
       run:
         working-directory: tests
+    steps:
+      - run: npm install --legacy-peer-deps
+      - run: npm run lint
 
   deployment:
     name: Tests
@@ -23,6 +26,4 @@ jobs:
       - uses: actions/checkout@v3
       - run: npm install
       - run: npm install -g mocha
-      - run: npm install --legacy-peer-deps
-      - run: npm run lint
       - run: npm run test
